@@ -18,7 +18,7 @@ const RoomPage =() => {
             sharedLinks: [
                 {
                     name :'Copy Link',
-                    url : `https://vc-theta.vercel.app//room/${roomId}`,
+                    url : `https://videocall-xi-peach.vercel.app/room/${roomId}`,
                 }
             ],
             scenario: {
