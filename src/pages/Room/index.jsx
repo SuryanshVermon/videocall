@@ -13,12 +13,13 @@ const RoomPage =() => {
         const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(appID,serverSecret,roomId,Date.now().toString(),"Suryansh");
 
         const zc = ZegoUIKitPrebuilt.create(kitToken);
+        console.log(window.location.origin);
         zc.joinRoom({
             container: element,
             sharedLinks: [
                 {
                     name :'Copy Link',
-                    url : `https://videocall-xi-peach.vercel.app/room/${roomId}`,
+                    url : `${window.location.origin}/room/${roomId}`,
                 }
             ],
             scenario: {
