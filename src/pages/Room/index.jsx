@@ -31,7 +31,7 @@ const RoomPage =() => {
     };
 
     return <div>
-        <div ref={myMeeting} />
+        <div ref={myMeeting} style={{ width: '100vw', height: '100vh' }} />
     </div>
 };
 export default RoomPage;
