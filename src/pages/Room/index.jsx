@@ -10,7 +10,7 @@ const RoomPage =() => {
     const myMeeting = async(element)=>{
         const appID =1201230889;
         const serverSecret="294cb923e1bb1196e2eab5e3aef169c1";
-        const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(appID,serverSecret,roomId,Date.now().toString(),"Suryansh Vermon");
+        const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(appID,serverSecret,roomId,Date.now().toString(),"Suryansh");
 
         const zc = ZegoUIKitPrebuilt.create(kitToken);
         zc.joinRoom({
@@ -18,7 +18,7 @@ const RoomPage =() => {
             sharedLinks: [
                 {
                     name :'Copy Link',
-                    url : `https://vc-theta.vercel.app//room/${roomId}`,
+                    url : `https://videocall-xi-peach.vercel.app/room/${roomId}`,
                 }
             ],
             scenario: {

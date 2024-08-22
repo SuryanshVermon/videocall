@@ -1,5 +1,6 @@
 import React,{useState, useCallback}from "react";
 import {useNavigate} from 'react-router-dom'
+import "./home.css"
 
 const Homepage = () =>{
     const [value,setValue] = useState('');
@@ -11,7 +12,9 @@ const Homepage = () =>{
     },[navigate,value])
       
         return (
-            <div>
+            <div className="home">
+                <div className="home-header">
+                    <h1>VIDEO CALL APP</h1>
                 <input
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
@@ -20,6 +23,7 @@ const Homepage = () =>{
                 
                 />
                 <button onClick={handleJoinRoom}>Join</button>
+                </div>
             </div>
         )
 };
